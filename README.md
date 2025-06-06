@@ -2,7 +2,7 @@
 
 1. Клонируйте репозиторий:
 
-  git clone git@github.com:htmlacademy/html2-basic-template.git
+  git clone git@github.com:OlegSulitskii/test-task-only_.git
 
 2. Установите зависимости проекта:
 
