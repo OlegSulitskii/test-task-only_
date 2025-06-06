@@ -2,15 +2,15 @@
   "name": "test-task-only",
   "version": "1.0.0",
   "main": "index.js",
+  "keywords": [],
+  "author": "Oleg Sulitskii",
+  "license": "ISC",
+  "description": "",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack",
     "start": "webpack-dev-server --open"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
   "devDependencies": {
     "css-loader": "^7.1.2",
     "gsap": "^3.13.0",
