@@ -35,7 +35,15 @@
   text-transform: uppercase;
 }
 
-.intro__header--accent {
+.intro__header-wrapper {
+  overflow: hidden;
+}
+
+.intro__header-line {
+  display: inline-block;
+}
+
+.intro__header-line--accent {
   font-family: $font-primary-accent;
   font-weight: 500;
 }

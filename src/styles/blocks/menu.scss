@@ -17,6 +17,10 @@
   opacity: 0.7;
   box-sizing: border-box;
 
+  &--dark {
+    color: $color-accent-2;
+  }
+
   &:hover,
   &:focus-visible {
     opacity: 1;
