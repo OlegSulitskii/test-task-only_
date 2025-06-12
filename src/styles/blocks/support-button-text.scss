@@ -1,0 +1,23 @@
+.support-button-text {
+  font-family: $font-primary-bold;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 1;
+  text-transform: uppercase;
+  color: $text-color-base;
+  background-color:transparent;
+  border: none;
+  padding: 10px 0;
+  display: block;
+  box-sizing: border-box;
+  cursor: pointer;
+
+  &:hover,
+  &:focus-visible {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.4;
+  }
+}

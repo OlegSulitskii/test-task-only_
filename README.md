@@ -5,7 +5,6 @@
 - Стилизация - SASS/SCSS
 - Логика - Typescript
 - Анимации - gsap
-- Дополнительно - API (Intersection Observer)
 
 ## Установка
 

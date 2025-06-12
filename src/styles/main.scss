@@ -1,13 +1,19 @@
+@import "./common/variables.scss";
+@import "./common/mixins.scss";
+@import "./common/fonts.scss";
+@import "./common/global.scss";
+@import "./common/visually-hidden.scss";
+
+@import "./blocks/page.scss";
+@import "./blocks/wrapper.scss";
 @import "./blocks/header.scss";
-
-body {
-  background-color: green;
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-}
-
-h1 {
-	font-size: 100px;
-  background-color: red;
-}
+@import "./blocks/logo-image.scss";
+@import "./blocks/logo-text.scss";
+@import "./blocks/navigation.scss";
+@import "./blocks/menu.scss";
+@import "./blocks/button-toggle.scss";
+@import "./blocks/intro.scss";
+@import "./blocks/advantages.scss";
+@import "./blocks/support.scss";
+@import "./blocks/support-button.scss";
+@import "./blocks/support-button-text.scss";

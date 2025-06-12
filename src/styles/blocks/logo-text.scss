@@ -1,0 +1,21 @@
+.logo-text {
+  font-family: $font-primary-bold;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 1;
+  color: $text-color-base;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: block;
+  margin-left: 10px;
+  padding: 10px 0;
+
+  &:hover,
+  &:focus-visible {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.4;
+  }
+}

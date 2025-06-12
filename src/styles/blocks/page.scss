@@ -1,0 +1,22 @@
+.page__body {
+  margin: 0;
+
+  :where(h1,h2,h3) {
+    font-family: $font-primary;
+    font-weight: 500;
+    letter-spacing: -0.02em;
+    margin: 0;
+    padding: 0;
+  }
+
+  :where(p) {
+    font-family: $font-secondary;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+  }
+
+  :where(picture,source) {
+    display: contents;
+  }
+}
