@@ -1,13 +1,19 @@
 .intro {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
   color: $text-color-base;
+  min-height: 800px;
+}
+
+.intro__wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 100px 187px;
+  flex-grow: 1;
   background-image: image-set("../../src/images/bg-intro@1x.webp" 1x type("image/webp"), "../../src/images/bg-intro@2x.webp" 2x type("image/webp"));
   background-repeat: no-repeat;
-  min-height: 800px;
-  animation-name: opacity-intro;
-  animation-duration: 1s;
+  animation-name: opacity-intro, background-size-intro;
+  animation-duration: 0.5s, 1.5s;
   animation-fill-mode: forwards;
   animation-timing-function: ease-in-out;
   animation-iteration-count: 1;
@@ -16,23 +22,26 @@
 @keyframes opacity-intro {
   0% {
     opacity: 0;
-    background-size: 120%;
   }
   100% {
     opacity: 1;
-    background-size: 100%;
   }
 }
 
-.intro__wrapper {
-  padding: 100px 187px;
-  height: auto;
+@keyframes background-size-intro {
+  0% {
+    background-size: 120%;
+  }
+  100% {
+    background-size: 100%;
+  }
 }
 
 .intro__header {
   font-size: 75px;
   line-height: 1.3;
   text-transform: uppercase;
+  margin-top: auto;
 }
 
 .intro__header-wrapper {
