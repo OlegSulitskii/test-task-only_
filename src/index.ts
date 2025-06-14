@@ -1,20 +1,20 @@
 import './styles/main.scss'
 import { gsap } from 'gsap';
 
+const headerElement = document.querySelector('.header') as HTMLElement | null;
+const logoIconElement = headerElement?.querySelector('.logo-image__icon') as HTMLElement | null;
+const logoTextElement = headerElement?.querySelector('.logo-text') as HTMLElement | null;
+const menuLinkElements = headerElement?.querySelectorAll('.menu__link');
+const buttonToggleElement = headerElement?.querySelector('.button-toggle') as HTMLElement | null;
 const introElement = document.querySelector('.intro') as HTMLElement | null;
 const introHeaderElements = introElement?.querySelectorAll('.intro__header-line');
 const introSloganElement = introElement?.querySelector('.intro__slogan') as HTMLElement | null;
-const headerElement = document.querySelector('.header') as HTMLElement | null;
 const advantagesElement = document.querySelector('.advantages') as HTMLElement | null;
 const advantagesHeaderElements = advantagesElement?.querySelectorAll('.advantages__header-line');
 const advantagesTextElement = advantagesElement?.querySelector('.advantages__text-wrapper') as HTMLElement | null;
 const supportElement = document.querySelector('.support') as HTMLElement | null;
 const supportHeaderElements = supportElement?.querySelectorAll('.support__header-line');
 const supportTextElement = supportElement?.querySelector('.support__text') as HTMLElement | null;
-const logoIconElement = headerElement?.querySelector('.logo-image__icon') as HTMLElement | null;
-const logoTextElement = headerElement?.querySelector('.logo-text') as HTMLElement | null;
-const menuLinkElements = headerElement?.querySelectorAll('.menu__link');
-const buttonToggleElement = headerElement?.querySelector('.button-toggle') as HTMLElement | null;
 
 window.onload = () => {
   if (!introHeaderElements) return;
@@ -59,7 +59,7 @@ if (headerElement && introElement && advantagesElement) {
 
 const observerOptions: IntersectionObserverInit = {
   root: null,
-  threshold: 1.0,
+  threshold: 0.5,
 };
 
 const advantagesObserverCb: IntersectionObserverCallback = (entries: IntersectionObserverEntry[]) => {
